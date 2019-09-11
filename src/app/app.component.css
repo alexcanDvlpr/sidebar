@@ -1,0 +1,8 @@
+.pages {
+    width: 86.4%;
+    position: absolute;
+    top: 55px;
+    left: 260px;
+    padding: 20px;
+    overflow: auto;
+}

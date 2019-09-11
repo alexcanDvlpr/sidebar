@@ -1,0 +1,15 @@
+aside {
+    width: 260px;
+    position: static;
+    height: 100vh;
+    background: #df0024!important;
+    color: aliceblue;
+}
+
+.user-picture {
+    width: 50%;
+}
+
+.user-picture img {
+    border-radius: 200px;
+}
