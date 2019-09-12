@@ -7,6 +7,7 @@ import { PlayersComponent } from './pages/players/players.component';
 import { CompetitionComponent } from './pages/competition/competition.component';
 import { MatchesComponent } from './pages/matches/matches.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { AccountComponent } from './pages/account/account.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'matches', component: MatchesComponent },
   { path: 'matches/:matche', component: MatchesComponent },
   { path: 'profile/:id', component: ProfileComponent },
+  { path: 'accounts', component: AccountComponent },
   { path: 'e404', component: E404Component },
   { path: '**', redirectTo: 'e404' }
 ];
