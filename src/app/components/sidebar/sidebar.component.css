@@ -1,15 +1,57 @@
 aside {
     width: 260px;
-    position: static;
+    position: fixed;
+    z-index: 100;
     height: 100vh;
     background: #df0024!important;
     color: aliceblue;
 }
 
+.sidebar-profile {
+    border-bottom: 1px solid rgba(165, 165, 165, .7);
+}
+
+.picture-wrapper {
+    padding-top: 40px;
+}
+
 .user-picture {
-    width: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .user-picture img {
     border-radius: 200px;
+}
+
+.menu-header {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.7em;
+}
+
+.menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-items>li {
+    width: 100%;
+    padding: 20px 15px;
+    outline: none;
+    text-align: -webkit-match-parent;
+}
+
+.menu-items>li:hover,
+.active {
+    background-color: rgba(197, 0, 32, .7);
+    cursor: pointer;
+}
+
+.menu-items>li>a {
+    color: aliceblue;
+    text-decoration: none;
 }

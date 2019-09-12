@@ -8,6 +8,12 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AppService } from './services/app.service';
+import { E404Component } from './pages/errors/e404/e404.component';
+import { TeamsComponent } from './pages/teams/teams.component';
+import { PlayersComponent } from './pages/players/players.component';
+import { CompetitionComponent } from './pages/competition/competition.component';
+import { MatchesComponent } from './pages/matches/matches.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +21,13 @@ import { AppService } from './services/app.service';
     NavbarComponent,
     SidebarComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    E404Component,
+    TeamsComponent,
+    PlayersComponent,
+    CompetitionComponent,
+    MatchesComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
