@@ -1,1 +1,19 @@
-<p>players works!</p>
+<main class="main" *ngIf="!player">
+    <h2>Players</h2>
+    <hr>
+    <div class="search">
+        <mat-form-field appearance="legacy">
+            <mat-label>Jugadores GMV</mat-label>
+            <input autocomplete="off" matInput>
+            <mat-hint>Busca jugadores en GMV</mat-hint>
+        </mat-form-field>
+    </div>
+    <br><br>
+    <div class="players-content">
+        <div class="player-card" *ngFor="let player of players">
+            <div class="player-card-content">
+                {{ player.name }}
+            </div>
+        </div>
+    </div>
+</main>

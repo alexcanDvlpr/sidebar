@@ -1,0 +1,50 @@
+.search {
+    width: 100%;
+}
+
+.search>mat-form-field {
+    width: 100%;
+}
+
+.players-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    width: 19%;
+    height: 430px;
+    min-height: 430px;
+    max-height: 430px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 0px 5px 25px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    -webkit-box-shadow: 6px 7px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 7px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.player-card:hover {
+    cursor: pointer;
+    transform: rotateY(180deg)
+}
+
+.player-card-content {
+    width: 5px;
+    height: 100%;
+    padding: 10px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+@keyframes rotate-card {}
