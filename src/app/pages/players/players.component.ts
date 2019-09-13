@@ -10,6 +10,9 @@ import { PlayerService } from 'src/app/services/player.service';
 export class PlayersComponent implements OnInit {
 
   players: any;
+  color = 'warn';
+  mode = 'indeterminate';
+  value = 50;
 
   constructor(private playerService: PlayerService) { }
 

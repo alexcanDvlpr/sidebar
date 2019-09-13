@@ -10,9 +10,15 @@
     </div>
     <br><br>
     <div class="players-content">
-        <div class="player-card" *ngFor="let player of players">
+        <div class="player-card" *ngFor="let player of players" [routerLink]="['/players/bob']">
             <div class="player-card-content">
-                {{ player.name }}
+                <p>{{ player.username }}</p>
+            </div>
+        </div>
+        <div class="load-content">
+            <div class="load">
+                <mat-progress-spinner class="example-margin" [color]="color" [mode]="mode" [value]="value">
+                </mat-progress-spinner>
             </div>
         </div>
     </div>

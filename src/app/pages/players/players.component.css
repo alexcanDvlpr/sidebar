@@ -23,10 +23,12 @@
     max-height: 430px;
     border: 1px solid grey;
     border-radius: 5px;
+    background: url('/assets/img/bg-players.jpg');
+    background-size: cover;
     margin: 0px 5px 25px 5px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     flex-wrap: wrap;
     -webkit-box-shadow: 6px 7px 20px 0px rgba(0, 0, 0, 0.75);
@@ -36,7 +38,9 @@
 
 .player-card:hover {
     cursor: pointer;
-    transform: rotateY(180deg)
+    animation-name: rotate-card;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
 }
 
 .player-card-content {
@@ -45,6 +49,42 @@
     padding: 10px;
     word-wrap: break-word;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
 }
 
-@keyframes rotate-card {}
+.player-card-content>p {
+    font-weight: bold;
+    font-size: 1em;
+    color: aliceblue;
+}
+
+.load-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.load {
+    width: 10%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+mat-progress-spinner {
+    width: 100%;
+}
+
+@keyframes rotate-card {
+    to {
+        transform: rotateY(180deg);
+    }
+}
