@@ -18,10 +18,11 @@
     <br>
     <div class="players-content" *ngIf="grid">
         <div *ngIf="results" class="contenedor_tarjets_buscadas">
-            <h2>{{ 'pages.players.result' | translate }}:</h2>
+            <h2>{{ 'pages.players.result' | translate }} :</h2>
             <hr>
             <br>
-            <div class="contenedor_tarjeta" *ngFor="let result of results" [routerLink]="['/players/', result.id]">
+            <app-card [player]="result" *ngFor="let result of results" [routerLink]="['/players/', result.id]"></app-card>
+            <!--<div class="contenedor_tarjeta" *ngFor="let result of results" [routerLink]="['/players/', result.id]">
                 <figure id="tarjeta">
                     <img src="assets/img/bg-players.jpg" class="frontal" alt="">
                     <figcaption class="trasera">
@@ -30,7 +31,7 @@
                         <p>{{ result.name }}</p>
                     </figcaption>
                 </figure>
-            </div>
+            </div>-->
         </div>
         <div class="players">
             <app-card [player]="player" *ngFor="let player of players" [routerLink]="['/players/', player.id]"></app-card>
