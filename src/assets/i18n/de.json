@@ -15,6 +15,34 @@
         "spanish": "Spanisch",
         "english": "Englisch",
         "german": "Deutsch"
+    },
+    "pages": {
+        "dashboard": {
+
+        },
+        "accounts": {
+
+        },
+        "teams": {
+
+        },
+        "players": {
+            "title": "Spieler",
+            "input_label": "GMV-Spieler",
+            "input_hint": "Suche Spieler in GMV",
+            "result": "Ergebnisse",
+            "table": {
+                "id": "Id",
+                "name": "Name",
+                "username": "Benutzername"
+            }
+        },
+        "competitions": {
+
+        },
+        "matches": {
+
+        }
     }
 
 }

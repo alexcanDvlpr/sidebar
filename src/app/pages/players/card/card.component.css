@@ -1,56 +1,3 @@
-.search {
-    width: 100%;
-}
-
-.search>mat-form-field {
-    width: 100%;
-}
-
-.grid-type {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: center;
-    border-bottom: 1px solid darkgray;
-}
-
-.icons-grid {
-    margin-right: 35px;
-}
-
-.icons-grid>.icon {
-    font-size: 20px;
-    color: darkgray;
-}
-
-.icons-grid>.icon:hover {
-    cursor: pointer;
-    color: #000;
-}
-
-.players-content {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-.players {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-
-/*
 .contenedor_tarjets_buscadas,
 .players {
     width: 100%;
@@ -159,31 +106,4 @@ figure .trasera p {
     font-family: 'Open Sans', sans-serif;
     line-height: 22px;
     font-size: 14px;
-}*/
-
-.load-content {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-
-.load {
-    width: 10%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-mat-progress-spinner {
-    width: 100%;
-}
-
-@keyframes rotate-card {
-    to {
-        transform: rotateY(180deg);
-    }
 }

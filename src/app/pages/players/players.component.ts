@@ -14,8 +14,13 @@ export class PlayersComponent implements OnInit {
   mode = 'indeterminate';
   value = 50;
   results: any[];
+  grid: boolean;
+  table: boolean;
 
-  constructor(private playerService: PlayerService) { }
+  constructor(private playerService: PlayerService) {
+    this.grid = true;
+    this.table  = false;
+  }
 
   ngOnInit() {
     this.getUsers();
@@ -24,8 +29,6 @@ export class PlayersComponent implements OnInit {
 
 
   searchUser(letters: string) {
-    console.log('Letras: ' + letters);
-    console.log('Longitud: ' + letters.length);
 
     this.players.forEach(player => {
       if (player.username.toLowerCase().includes(letters.toLowerCase())) {
@@ -37,8 +40,6 @@ export class PlayersComponent implements OnInit {
     if (letters.length === 0) {
       this.results = null;
     }
-
-    console.log(this.results);
   }
 
 
@@ -51,6 +52,16 @@ export class PlayersComponent implements OnInit {
         console.error(err);
       }
     );
+  }
+
+  setGrid() {
+    this.grid = true;
+    this.table  = false;
+  }
+
+  setTable() {
+    this.grid = false;
+    this.table  = true;
   }
 
 }

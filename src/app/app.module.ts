@@ -22,6 +22,7 @@ import { CompetitionComponent } from './pages/competition/competition.component'
 import { MatchesComponent } from './pages/matches/matches.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { AccountComponent } from './pages/account/account.component';
+import { CardComponent } from './pages/players/card/card.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AccountComponent } from './pages/account/account.component';
     CompetitionComponent,
     MatchesComponent,
     ProfileComponent,
-    AccountComponent
+    AccountComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
