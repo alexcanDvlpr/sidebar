@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'frontend';
+
+  language;
+
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('es');
+  }
+
+  requestEmit($event) {
+    this.language = $event;
+    this.translate.use(this.language);
+  }
 }

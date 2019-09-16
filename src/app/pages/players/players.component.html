@@ -1,1 +1,74 @@
-<p>players works!</p>
+<main class="main" *ngIf="!player">
+    <h2>{{ 'pages.players.title' | translate }}</h2>
+    <hr>
+    <div class="search">
+        <mat-form-field appearance="legacy">
+            <mat-label>{{ 'pages.players.input_label' | translate }}</mat-label>
+            <input (keyup)="searchUser(input.value)" #input autocomplete="off" matInput>
+            <mat-hint>{{ 'pages.players.input_hint' | translate }}</mat-hint>
+        </mat-form-field>
+    </div>
+    <br>
+    <div class="grid-type">
+        <div class="icons-grid">
+            <span (click)="setGrid()" class="icon icon-menu"></span>
+            <span (click)="setTable()" class="icon icon-table"></span>
+        </div>
+    </div>
+    <br>
+    <div class="players-content" *ngIf="grid">
+        <div *ngIf="results" class="contenedor_tarjets_buscadas">
+            <h2>{{ 'pages.players.result' | translate }} :</h2>
+            <hr>
+            <br>
+            <app-card [player]="result" *ngFor="let result of results" [routerLink]="['/players/', result.id]"></app-card>
+            <!--<div class="contenedor_tarjeta" *ngFor="let result of results" [routerLink]="['/players/', result.id]">
+                <figure id="tarjeta">
+                    <img src="assets/img/bg-players.jpg" class="frontal" alt="">
+                    <figcaption class="trasera">
+                        <h2 class="text-center titulo">{{ result.username }}</h2>
+                        <hr>
+                        <p>{{ result.name }}</p>
+                    </figcaption>
+                </figure>
+            </div>-->
+        </div>
+        <div class="players">
+            <app-card [player]="player" *ngFor="let player of players" [routerLink]="['/players/', player.id]"></app-card>
+            <!--<div class="contenedor_tarjeta" *ngFor="let player of players" [routerLink]="['/players/', player.id]">
+                <figure id="tarjeta">
+                    <img src="assets/img/bg-players.jpg" class="frontal" alt="">
+                    <figcaption class="trasera">
+                        <h2 class="text-center titulo">{{ player.username }}</h2>
+                        <hr>
+                        <p>{{ player.name }}</p>
+                    </figcaption>
+                </figure>
+            </div>-->
+        </div>
+        <div class="load-content">
+            <div class="load">
+                <mat-progress-spinner class="example-margin" [color]="color" [mode]="mode" [value]="value">
+                </mat-progress-spinner>
+            </div>
+        </div>
+    </div>
+    <div class="players-content" *ngIf="table">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">{{ 'pages.players.table.id' | translate }}</th>
+                    <th scope="col">{{ 'pages.players.table.name' | translate }}</th>
+                    <th scope="col">{{ 'pages.players.table.username' | translate }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let player of players">
+                    <th scope="row">{{ player.id }}</th>
+                    <td>{{ player.name }}</td>
+                    <td>{{ player.username }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
