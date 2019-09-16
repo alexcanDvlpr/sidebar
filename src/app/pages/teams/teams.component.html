@@ -1,7 +1,10 @@
 <main class="main" *ngIf="!team">
-    <h2>Teams</h2>
-    <hr>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae itaque voluptates a est modi fugit sapiente recusandae repudiandae voluptas, earum fugiat praesentium, quis non, in consequatur reiciendis iusto accusantium excepturi.</p>
+    <mat-tab-group>
+        <mat-tab label="Rainbow Six Seige"> Rainbow Six Seige </mat-tab>
+        <mat-tab label="Counter Strike Global Offensive"> Counter Strike Global Offensive </mat-tab>
+        <mat-tab label="Overwatch"> Overwatch </mat-tab>
+        <mat-tab label="Fornite"> Fornite </mat-tab>
+    </mat-tab-group>
 </main>
 <main class="main" *ngIf="team">
     <h2>Team: {{ team | titlecase }}</h2>
