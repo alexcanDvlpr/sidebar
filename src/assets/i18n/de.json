@@ -1,0 +1,20 @@
+{
+    "sidebar-menu": {
+        "dashboard": "Dashboard",
+        "my-account": "Meine Konten",
+        "teams": "Mannschaften",
+        "players": "Spieler",
+        "competitions": "Wettbewerbe",
+        "matches": "Streichhölzer",
+        "twitch": "Offiziell Twitch"
+    },
+    "navbar-menu": {
+        "configuration": "Setup",
+        "profile": "Profil",
+        "close-session": "Ausloggen",
+        "spanish": "Spanisch",
+        "english": "Englisch",
+        "german": "Deutsch"
+    }
+
+}

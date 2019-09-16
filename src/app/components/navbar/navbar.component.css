@@ -31,3 +31,22 @@ nav {
     justify-content: center;
     align-content: center;
 }
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.icon-language {
+    width: 25px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.icon-language-item {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.dropdown-item:hover {
+    cursor: pointer;
+}

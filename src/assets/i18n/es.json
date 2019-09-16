@@ -1,0 +1,20 @@
+{
+    "sidebar-menu": {
+        "dashboard": "Dashboard",
+        "my-account": "Mis Cuentas",
+        "teams": "Equipos",
+        "players": "Jugadores",
+        "competitions": "Competiciones",
+        "matches": "Partidos",
+        "twitch": "Official Twitch"
+    },
+    "navbar-menu": {
+        "configuration": "Configuración",
+        "profile": "Perfil",
+        "close-session": "Cerrar Sesión",
+        "spanish": "Español",
+        "english": "Inglés",
+        "german": "Alemán"
+    }
+
+}

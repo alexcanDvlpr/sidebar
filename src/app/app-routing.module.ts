@@ -11,7 +11,7 @@ import { AccountComponent } from './pages/account/account.component';
 
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'teams', component: TeamsComponent },
   { path: 'teams/:team', component: TeamsComponent },
   { path: 'players', component: PlayersComponent },

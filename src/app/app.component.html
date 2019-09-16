@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="wrapper default-theme">
-    <app-navbar></app-navbar>
+    <app-navbar (languageToApp)="requestEmit($event)"></app-navbar>
     <main>
         <app-sidebar></app-sidebar>
         <div class="pages container-fluid pt-4 pb-4 pl-4 pr-4 ">
