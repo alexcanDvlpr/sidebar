@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
+## Example Media Queries
+
+mobile-portrait: min:320px - max:479px;
+mobile-landscape: min:480px - max:599px;
+small-tablet-portrait: min:600px - max:799px;
+small-tablet-landscape: min:800px - max:767px;
+tablet-portrait: min:768px - max:1023px;
+tablet-landscape: min:1024px;
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
