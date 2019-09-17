@@ -1,0 +1,48 @@
+{
+    "sidebar-menu": {
+        "dashboard": "Dashboard",
+        "my-account": "Meine Konten",
+        "teams": "Mannschaften",
+        "players": "Spieler",
+        "competitions": "Wettbewerbe",
+        "matches": "Streichhölzer",
+        "twitch": "Offiziell Twitch"
+    },
+    "navbar-menu": {
+        "configuration": "Setup",
+        "profile": "Profil",
+        "close-session": "Ausloggen",
+        "spanish": "Spanisch",
+        "english": "Englisch",
+        "german": "Deutsch"
+    },
+    "pages": {
+        "dashboard": {
+
+        },
+        "accounts": {
+
+        },
+        "teams": {
+
+        },
+        "players": {
+            "title": "Spieler",
+            "input_label": "GMV-Spieler",
+            "input_hint": "Suche Spieler in GMV",
+            "result": "Ergebnisse",
+            "table": {
+                "id": "Id",
+                "name": "Name",
+                "username": "Benutzername"
+            }
+        },
+        "competitions": {
+
+        },
+        "matches": {
+
+        }
+    }
+
+}

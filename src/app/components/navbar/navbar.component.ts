@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { AppService } from 'src/app/services/app.service';
+import { Component, OnInit, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
+// import { Constants } from '../../services/constants';
 
 @Component({
   selector: 'app-navbar',
@@ -8,15 +9,23 @@ import { AppService } from 'src/app/services/app.service';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private appService: AppService) { }
-  isCollapsed = true;
+  language: string;
+  @Output() languageToApp = new EventEmitter();
+
+  constructor(/*private lang: Constants*/) {
+    this.language = 'es';
+  }
+
   ngOnInit() {
   }
 
-  toggleSidebarPin() {
-    this.appService.toggleSidebarPin();
+  changeLanguage(lang: string) {
+    this.language = lang;
+    this.emitLanguage();
   }
-  toggleSidebar() {
-    this.appService.toggleSidebar();
+
+  emitLanguage() {
+    this.languageToApp.emit(this.language);
   }
+
 }

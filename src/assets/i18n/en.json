@@ -1,0 +1,48 @@
+{
+    "sidebar-menu": {
+        "dashboard": "Dashboard",
+        "my-account": "My Acounts",
+        "teams": "Teams",
+        "players": "Players",
+        "competitions": "Competitions",
+        "matches": "Matches",
+        "twitch": "Official Twitch"
+    },
+    "navbar-menu": {
+        "configuration": "Configuration",
+        "profile": "Profile",
+        "close-session": "Exit",
+        "spanish": "Spanish",
+        "english": "English",
+        "german": "German"
+    },
+    "pages": {
+        "dashboard": {
+
+        },
+        "accounts": {
+
+        },
+        "teams": {
+
+        },
+        "players": {
+            "title": "Players",
+            "input_label": "GMV Players",
+            "input_hint": "Search players in GMV",
+            "result": "Results",
+            "table": {
+                "id": "Id",
+                "name": "Name",
+                "username": "Username"
+            }
+        },
+        "competitions": {
+
+        },
+        "matches": {
+
+        }
+    }
+
+}
