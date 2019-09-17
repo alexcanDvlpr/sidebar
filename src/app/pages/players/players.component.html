@@ -22,31 +22,11 @@
             <hr>
             <br>
             <app-card [player]="result" *ngFor="let result of results" [routerLink]="['/players/', result.id]"></app-card>
-            <!--<div class="contenedor_tarjeta" *ngFor="let result of results" [routerLink]="['/players/', result.id]">
-                <figure id="tarjeta">
-                    <img src="assets/img/bg-players.jpg" class="frontal" alt="">
-                    <figcaption class="trasera">
-                        <h2 class="text-center titulo">{{ result.username }}</h2>
-                        <hr>
-                        <p>{{ result.name }}</p>
-                    </figcaption>
-                </figure>
-            </div>-->
         </div>
         <div class="players">
             <app-card [player]="player" *ngFor="let player of players" [routerLink]="['/players/', player.id]"></app-card>
-            <!--<div class="contenedor_tarjeta" *ngFor="let player of players" [routerLink]="['/players/', player.id]">
-                <figure id="tarjeta">
-                    <img src="assets/img/bg-players.jpg" class="frontal" alt="">
-                    <figcaption class="trasera">
-                        <h2 class="text-center titulo">{{ player.username }}</h2>
-                        <hr>
-                        <p>{{ player.name }}</p>
-                    </figcaption>
-                </figure>
-            </div>-->
         </div>
-        <div class="load-content">
+        <div class="load-content" *ngIf="load">
             <div class="load">
                 <mat-progress-spinner class="example-margin" [color]="color" [mode]="mode" [value]="value">
                 </mat-progress-spinner>

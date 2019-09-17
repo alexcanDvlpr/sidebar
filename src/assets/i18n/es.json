@@ -24,7 +24,8 @@
 
         },
         "teams": {
-
+            "title": "Equipos",
+            "description": "El baloncesto es un deporte que se practica en equipo, 5 contra 5."
         },
         "players": {
             "title": "Jugadores",

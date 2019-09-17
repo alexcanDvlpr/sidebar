@@ -39,6 +39,7 @@
     flex-wrap: wrap;
 }
 
+.contenedor_tarjets_buscadas,
 .players {
     width: 100%;
     height: auto;
@@ -75,3 +76,5 @@ mat-progress-spinner {
         transform: rotateY(180deg);
     }
 }
+
+@media only screen and (max-width: 1366px) {}

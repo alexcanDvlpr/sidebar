@@ -1,7 +1,7 @@
 <main class="main" *ngIf="!team">
-    <h2>Teams</h2>
+    <h2>{{ 'pages.teams.title' | translate }}</h2>
     <hr>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae itaque voluptates a est modi fugit sapiente recusandae repudiandae voluptas, earum fugiat praesentium, quis non, in consequatur reiciendis iusto accusantium excepturi.</p>
+    <p>{{'pages.teams.description' | translate}}</p>
 </main>
 <main class="main" *ngIf="team">
     <h2>Team: {{ team | titlecase }}</h2>

@@ -16,10 +16,12 @@ export class PlayersComponent implements OnInit {
   results: any[];
   grid: boolean;
   table: boolean;
+  load: boolean;
 
   constructor(private playerService: PlayerService) {
     this.grid = true;
     this.table  = false;
+    this.load = true;
   }
 
   ngOnInit() {
@@ -47,6 +49,7 @@ export class PlayersComponent implements OnInit {
     this.playerService.getAllUsers().subscribe(
       res => {
         this.players = res;
+        this.load = false;
       },
       err => {
         console.error(err);

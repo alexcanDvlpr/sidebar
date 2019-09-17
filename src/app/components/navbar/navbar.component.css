@@ -4,7 +4,7 @@ nav {
     padding: 10px;
     position: fixed;
     z-index: 111;
-    background: #df0024!important;
+    background: var(--color-gmv-primary) !important;
 }
 
 .navbar-header {

@@ -1,14 +1,14 @@
 .pages {
-    width: 86%;
+    width: 95%;
     position: absolute;
     top: 55px;
-    left: 260px;
+    left: 85px;
     padding: 20px;
     overflow: auto;
 }
 
 @media only screen and (max-width: 1366px) {
     .pages {
-        width: 79%;
+        width: 93%;
     }
 }

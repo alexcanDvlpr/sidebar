@@ -24,7 +24,8 @@
 
         },
         "teams": {
-
+            "title": "Teams",
+            "description": "Basketball is a sport that is practiced as a team, 5 against 5."
         },
         "players": {
             "title": "Players",

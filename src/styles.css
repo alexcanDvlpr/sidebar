@@ -1,6 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* COLORES PRINCIPALES */
+
+:root {
+    --color-gmv-primary: #df0024;
+    --color-gmv-primary-dark: rgba(197, 0, 32, .7);
+    --color-gmv-secondary: #6A6A6A;
+    --color-gmv-secondary-dark: #4A4A4A;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,12 +26,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #df0024;
+    background: var(--color-gmv-primary);
     border-radius: 4px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background: #b3b3b3;
+    background: var(--color-gmv-primary-dark);
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 

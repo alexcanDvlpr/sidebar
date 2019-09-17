@@ -24,7 +24,8 @@
 
         },
         "teams": {
-
+            "title": "Mannschaften",
+            "description": "Basketball ist eine Sportart, die als Mannschaften 5 gegen 5 ausgeübt wird."
         },
         "players": {
             "title": "Spieler",
