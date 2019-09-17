@@ -15,15 +15,8 @@ aside {
     padding-top: 40px;
 }
 
-.user-picture {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.user-picture img {
-    border-radius: 200px;
+.sidebar-menu {
+    margin-top: 60px;
 }
 
 .menu-header {
