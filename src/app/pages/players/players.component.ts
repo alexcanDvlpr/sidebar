@@ -21,7 +21,7 @@ export class PlayersComponent implements OnInit {
   constructor(private playerService: PlayerService) {
     this.grid = true;
     this.table  = false;
-    this.load = true;
+    this.load = false;
   }
 
   ngOnInit() {
@@ -46,7 +46,8 @@ export class PlayersComponent implements OnInit {
 
 
   getUsers() {
-    this.playerService.getAllUsers().subscribe(
+    this.players = this.playerService.getAllUsers();
+    /*this.playerService.getAllUsers().subscribe(
       res => {
         this.players = res;
         this.load = false;
@@ -54,7 +55,7 @@ export class PlayersComponent implements OnInit {
       err => {
         console.error(err);
       }
-    );
+    );*/
   }
 
   setGrid() {

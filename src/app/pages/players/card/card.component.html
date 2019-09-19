@@ -1,10 +1,15 @@
 <div class="contenedor_tarjeta">
     <figure id="tarjeta">
-        <img src="assets/img/bg-players.jpg" class="frontal" alt="">
+        <!--<img src="assets/img/bg-players.jpg" class="frontal" alt="">-->
+        <img src="{{ player.img }}" class="frontal" alt="">
         <figcaption class="trasera">
             <h2 class="text-center titulo">{{ player.username }}</h2>
             <hr>
-            <p>{{ player.name }}</p>
+            <h5 class="text-center">{{ player.fullname }}</h5>
+            <ul class="container">
+                <li>{{ player.acronym }}</li>
+                <li>{{ player.job }}</li>
+            </ul>
         </figcaption>
     </figure>
 </div>

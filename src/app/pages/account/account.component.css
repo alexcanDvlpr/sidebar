@@ -1,0 +1,10 @@
+/*.mat-tab-label,
+.mat-tab-link*/
+
+.label {
+    color: #fff !important;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #fff !important;
+}

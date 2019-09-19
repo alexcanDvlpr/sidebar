@@ -45,7 +45,7 @@
             <tbody>
                 <tr class="tr-player" *ngFor="let player of players" [routerLink]="['/players/', player.id]">
                     <th scope="row">{{ player.id }}</th>
-                    <td>{{ player.name }}</td>
+                    <td>{{ player.fullname }}</td>
                     <td>{{ player.username }}</td>
                 </tr>
             </tbody>
