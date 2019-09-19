@@ -14,7 +14,8 @@
         "close-session": "Ausloggen",
         "spanish": "Spanisch",
         "english": "Englisch",
-        "german": "Deutsch"
+        "german": "Deutsch",
+        "hello": "Hallo"
     },
     "pages": {
         "dashboard": {

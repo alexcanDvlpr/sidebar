@@ -43,7 +43,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let player of players">
+                <tr class="tr-player" *ngFor="let player of players" [routerLink]="['/players/', player.id]">
                     <th scope="row">{{ player.id }}</th>
                     <td>{{ player.name }}</td>
                     <td>{{ player.username }}</td>

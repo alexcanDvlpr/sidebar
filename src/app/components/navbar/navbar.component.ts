@@ -1,6 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
-// import { Constants } from '../../services/constants';
 
 @Component({
   selector: 'app-navbar',
@@ -12,8 +11,13 @@ export class NavbarComponent implements OnInit {
   language: string;
   @Output() languageToApp = new EventEmitter();
 
-  constructor(/*private lang: Constants*/) {
+  nameUser: string;
+  lastname: string;
+
+  constructor() {
     this.language = 'es';
+    this.nameUser = 'Alejandro';
+    this.lastname = 'Cantón';
   }
 
   ngOnInit() {
@@ -26,6 +30,10 @@ export class NavbarComponent implements OnInit {
 
   emitLanguage() {
     this.languageToApp.emit(this.language);
+  }
+
+  showLang(langDiv: any) {
+    langDiv.addClass('enabled');
   }
 
 }

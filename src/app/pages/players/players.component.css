@@ -4,6 +4,7 @@
 
 .search>mat-form-field {
     width: 100%;
+    color: #fff;
 }
 
 .grid-type {
@@ -65,6 +66,10 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+
+.tr-player {
+    cursor: pointer;
 }
 
 mat-progress-spinner {

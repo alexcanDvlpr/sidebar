@@ -6,7 +6,7 @@
         "players": "Jugadores",
         "competitions": "Competiciones",
         "matches": "Partidos",
-        "twitch": "Official Twitch"
+        "twitch": "Twitch Oficial"
     },
     "navbar-menu": {
         "configuration": "Configuración",
@@ -14,7 +14,8 @@
         "close-session": "Cerrar Sesión",
         "spanish": "Español",
         "english": "Inglés",
-        "german": "Alemán"
+        "german": "Alemán",
+        "hello": "Hola"
     },
     "pages": {
         "dashboard": {

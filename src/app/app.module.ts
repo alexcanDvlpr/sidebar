@@ -23,6 +23,7 @@ import { MatchesComponent } from './pages/matches/matches.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { AccountComponent } from './pages/account/account.component';
 import { CardComponent } from './pages/players/card/card.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CardComponent } from './pages/players/card/card.component';
     MatchesComponent,
     ProfileComponent,
     AccountComponent,
-    CardComponent
+    CardComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

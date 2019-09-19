@@ -8,9 +8,11 @@ import { CompetitionComponent } from './pages/competition/competition.component'
 import { MatchesComponent } from './pages/matches/matches.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { AccountComponent } from './pages/account/account.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'teams', component: TeamsComponent },
   { path: 'teams/:team', component: TeamsComponent },
