@@ -61,7 +61,7 @@ export class PlayerService {
         name: 'Raúl',
         lastname: 'Tejedor García',
         fullname: 'Raúl Tejedor García',
-        username: 'rtag_97',
+        username: 'ratg97',
         acronym: 'RTEG',
         job: 'Web Developer',
         img: 'https://mysite.gmv.com:443/User Photos/Imagenes del perfil/rteg_MThumb.jpg'
